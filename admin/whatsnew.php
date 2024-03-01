@@ -1,7 +1,5 @@
 <?php
 define("ADMINAREA", (true));
-
-
 require "../init.php";
 $aInt = new WHMCS\Admin("View What's New");
 $smarty = new WHMCS\Smarty(true);
