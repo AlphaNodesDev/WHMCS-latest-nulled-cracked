@@ -8,9 +8,9 @@ class License
 	const STAGING_LICENSE_API_HOSTS = array('127.0.0.1');
 	const UNLICENSED_KEY = 'LICENSE-REQUIRED';
 
-	private $licensekey = '';
+	private $licensekey = '45yrdyry5yr5yrgrfgd5rrdh5h55r5y5ydr5y5rydr5drrg5gd5dg5gdgdr5gdr55grdrg';
 	private $localkey = false;
-	private $keydata = NULL;
+	private $keydata = '45yrdyry5yr5yrgrfgd5rrdh5h55r5y5ydr5y5rydr5drrg5gd5dg5gdgdr5gdr55grdrg';
 	private $salt = '';
 	private $postmd5hash = '';
 	private $localkeydays = '10';
@@ -268,7 +268,7 @@ class License
 		}
 		$results["status"] = "Active";
 		$results["key"] = $S['licensekey'];
-		$results["registeredname"] = "NullCave.club";
+		$results["registeredname"] = "AlphaNodesDev";
 		$results["productname"] = "WHMCS 8.8.0";
 		$results["productid"] = "5";
 		$results["billingcycle"] = "One Time";
