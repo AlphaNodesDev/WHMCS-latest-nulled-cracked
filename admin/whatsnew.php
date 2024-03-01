@@ -1,5 +1,5 @@
 <?php
-define("ADMINAREA", true);
+define("ADMINAREA", (true));
 require "../init.php";
 $aInt = new WHMCS\Admin("View What's New");
 $smarty = new WHMCS\Smarty(true);
@@ -7,7 +7,7 @@ $highlightTracker = new WHMCS\Notification\VersionFeatureHighlights();
 $smarty->assign("features", $highlightTracker->getFeatureHighlights());
 if (App::getFromRequest("modal")) {
     $smarty->assign("dismissedForAdmin", $aInt->isFeatureHighlightsDismissedUntilUpdate() ? "1" : "0");
-    $response = ['title' => "Thank you for downoading from https://nullcave.club/.", 'body' => "Have fun with this fine release."];
+    $response = ['title' => "Thank you for downoading from https://github.com/AlphaNodesDev/WHMCS_8", 'body' => "Have fun with this Crack release."];
     $aInt->setBodyContent($response);
     $aInt->output();
 }
